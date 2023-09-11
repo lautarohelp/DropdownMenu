@@ -1,0 +1,96 @@
+/* header */
+header{
+    display: flex;
+}
+.headerMemu{
+    width: 100%;
+}
+.menuPrincipal{
+    width: 100%;
+}
+.burger{
+    display: none;
+}
+.closedMenu{
+    display: none;
+}
+.ulPrincipal{
+    display: flex;
+}
+.menuPrincipal ul div {
+    margin-left: auto;
+    flex-direction: row ;
+    align-items: center;
+}
+
+.ulPrincipal div a {
+    padding: 14px;
+    margin: 0 10px;
+}
+.ulPrincipal div a:hover {
+    color: #141414;
+    border-color: #141414;
+}
+.ulPrincipal li:hover a {
+    color: #141414;
+}
+.Company{
+    cursor: pointer;
+}
+.Features{
+    cursor: pointer;
+}
+.FeaturesList {
+    position: absolute;
+    background: #F9F9F9;
+    box-shadow: -1px 28px 62px -35px rgba(0,0,0,0.75);
+    left: 11%;
+    top: 9%;
+}
+.CompanyList {
+    position: absolute;
+    background: #F9F9F9;
+    box-shadow: -1px 28px 62px -35px rgba(0,0,0,0.75);
+    top: 9%;
+    
+}
+
+
+/* main */
+
+main{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    text-align: start;
+    align-items: start;
+    width: 832px;
+    height: 80%;
+    margin: 0 auto;
+}
+.imgPrincipal{
+    background-image: url(./images/image-hero-desktop.png);
+    width: 100%;
+    height: 482px;
+}
+main section h1{
+    font-size: 6rem;
+}
+main section div,main section a{
+    color: #F9F9F9;
+    background: #141414;
+    width: 135px;
+    height: 40px;
+    border-radius:13px;
+    margin: 30px 0 72px 0;
+}
+main section a:hover{
+    background-color: #F9F9F9;
+    border: 1px solid #686868;
+    color: #141414;
+    font-weight: bold;
+}
+
+.sectionTwo{
+    padding-right: 45px;
+}
