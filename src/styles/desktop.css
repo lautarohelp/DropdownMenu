@@ -94,3 +94,15 @@ main section a:hover{
 .sectionTwo{
     padding-right: 45px;
 }
+
+.registroGeneral{
+    height: 100%;
+    width: 450px;
+}
+
+.button__login:hover{
+    background: #F9F9F9;
+    border: 2px solid #686868;
+    color: #141414;
+    font-weight: bold;
+}

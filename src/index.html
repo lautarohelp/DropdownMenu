@@ -13,7 +13,7 @@
 
 </head>
 <body>
-    <header>
+    <header class="pantalla">
         <div class="divHeader">
         <img src="./styles/images/logo.svg" alt="">
         <img class="burger" src="./styles/images/icon-menu.svg" alt="">
@@ -65,22 +65,21 @@
                     <li><a href="#">Careers</a></li>
                     <li><a href="#">About</a></li>
                     <div class="botones" >
-                        <a href="#">Login</a>
+                        <a class="loging" href="#">Login</a>
                         <a class="registro" href="#">Register</a>
                     </div>
                 </ul>
             </div>  
         </section>
-        
     </header>
 
-    <main>
+    <main class="pantalla2">
         <section class="imgPrincipal"></section>
         
         <section class="sectionTwo">
             <h1>Make remote work</h1>
             <p>Get your team in sync,no matter your location. Streamline processes,create team rituals,and watch productivity soar.</p>
-            <div><a href="#">Learn more</a></div>
+            <div><a href="/DropdownMenu/src/index.html#nuevoRegistro">Learn more</a></div>
 
             <figure>
                 <img class="img1" src="./styles/images/client-databiz.svg" alt="">
@@ -90,6 +89,82 @@
             </figure>
         </section>
     </main>
+
+    <section class="registroGeneralPrincipal inactive">
+        <div class="registroGeneral">
+        <img class="closedMen" src="./styles/images/icon-close-menu.svg" alt="">
+        <h1>You are new, Register don't miss the opportunity</h1>
+        <div class="inputs__container"> 
+
+            <h2>Enter an Email or Phone Number</h2>
+            <div class="first__input">
+                <input type="text" id="name" autocomplete="email" placeholder="Email or phone number">
+            </div>
+            <h2>Repeat Email or Phone Number</h2>
+            <div class="first__input">
+                <input type="text" id="name" autocomplete="email" placeholder="Email or phone number">
+            </div>
+
+            <h2>Enter a strong password</h2>
+            <div class="first__input">
+                <input type="password" id="name" placeholder="password">
+            </div>
+            <h2>Repeat password</h2>
+            <div class="first__input">
+                <input type="password" id="name" placeholder="password">
+            </div>
+        </div>
+
+        <a class="button__login" href="#error">Iniciar sesion</a>
+
+        <div class="option__login">
+            <label class="checkbox" for="Recuerdame">
+                <input class="remember__me" type="checkbox">
+                <p>remember</p>
+            </label>
+        </div>
+        </div>
+    </section>
+
+    <section class="registroGeneralPrincipal enter inactive">
+        <div class="registroGeneral">
+        <img class="closedMen closeLogin" src="./styles/images/icon-close-menu.svg" alt="">
+        <h1>welcome</h1>
+
+        <div class="inputs__container"> 
+
+            <h2>Enter an Email or Phone Number</h2>
+            <div class="first__input">
+                <input type="text" id="name" autocomplete="email" placeholder="Email or phone number">
+            </div>
+
+            <h2>Enter a strong password</h2>
+            <div class="first__input">
+                <input type="password" id="name" placeholder="password">
+            </div>
+
+        </div>
+
+        <a class="button__login maik" href="#error">Log in</a>
+
+        <div class="option__login">
+            <label class="checkbox" for="Recuerdame">
+                <input class="remember__me" type="checkbox">
+                <p>remember</p>
+            </label>
+        </div>
+        </div>
+    </section>
+
+
+    <section class="mantenimiento inactive">
+        <h1>We are currently undergoing maintenance, please try again later.</h1>
+        <img src="./styles/images/reparar-600x729.png" alt="">
+        <a class="button__login" href="">Return</a>
+    </section>
+
+    
+    
 
     <script src="./index.js"></script>
 </body>

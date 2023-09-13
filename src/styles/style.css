@@ -143,6 +143,80 @@ main figure img{
     border-radius: 12px;
 }
 
+/* registro */
+.registroGeneralPrincipal{
+    background: #1414149c;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+}
+
+.registroGeneral{
+    /* position: absolute; */
+    height: 150%;
+    padding: 20px 30px  ;
+    margin-left: auto;
+    font-size: 1.5rem;
+    color: #141414;
+    text-align: center;
+    background: #fff;
+}
+.registroGeneral h2{
+    font-size: 1.8rem;
+    color: #686868;
+    margin: 20px 0;
+
+}
+.inputs__container{
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.checkbox{
+    display: flex;
+    margin: 20px 0 0 0;
+}
+.remember__me{
+    margin-right: 10px;
+}
+#name{
+    width: 80%;
+    padding: 10px;
+    border-radius: 10px;
+    border-left: none;
+    border-top: none;
+}
+#name:hover{
+    box-shadow: -1px 2px 13px -6px rgba(0,0,0,0.75);
+}
+.button__login{
+    padding: 10px 16px;
+    background: #141414;
+    text-decoration: none;
+    color: #F9F9F9;
+    border-radius: 7px;
+}
+.closedMen{
+margin-bottom: 20px;
+cursor: pointer;
+}
+
+/* mantenimiento */
+
+.mantenimiento{
+    font-size: 1.5rem;
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+.mantenimiento img{
+    width: 250px;
+    height: 300px;
+    margin: 0 auto;
+}
+
+
 /* desactivacion de menus */
 .inactive{
     display: none;

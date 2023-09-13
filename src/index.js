@@ -7,6 +7,7 @@ const company = document.querySelector('.Company')
 const companyList = document.querySelector('.CompanyList')
 const headerM = document.querySelector('.headerM');
 const closedMenuIcon = document.querySelector('.closedMenu');
+const closedMenIcon = document.querySelector('.closedMen');
 const openMenuIcon = document.querySelector('.burger');
 const openFeacIcon = document.querySelector('.icon-down');
 const arrowDow = document.querySelector('.arrow-dow');
@@ -14,16 +15,56 @@ const arrowDow2 = document.querySelector('.arrow-dow2');
 const arrowUp = document.querySelector('.arrow-up');
 const arrowUp2 = document.querySelector('.arrow-up2');
 const clickClose = document.querySelector('.clickClose');
+const clickRegistro = document.querySelector('.registro');
+const registroGeneralPrincipal = document.querySelector('.registroGeneralPrincipal');
+const button__login = document.querySelector('.button__login')
+const pantalla = document.querySelector('.pantalla')
+const pantalla2 = document.querySelector('.pantalla2')
+const mantenimiento = document.querySelector('.mantenimiento')
+const enter = document.querySelector('.enter');
+const maik = document.querySelector('.maik');
+const loging = document.querySelector('.loging');
+const closeLogin = document.querySelector('.closeLogin')
 
 window.addEventListener('resize',closeResiZe)
 closeResiZe();
 
+/* window.addEventListener('hash',verifyHash)   */
 
+closeLogin.addEventListener('click',openLoging)
+loging.addEventListener('click',openLoging)
+maik.addEventListener('click',verifyHash);
+button__login.addEventListener('click',verifyHash);
+clickRegistro.addEventListener('click', openRegistro)
 openMenuIcon.addEventListener('click',openMenu);
 closedMenuIcon.addEventListener('click',closeMenu);
 features.addEventListener('click',openAndClose);
 company.addEventListener('click',openAndCloseDem);
 clickClose.addEventListener('click',closeMenu);
+closedMenIcon.addEventListener('click',openRegistro);
+
+
+function openLoging() {
+    if (enter.classList.contains('inactive')) {
+        enter.classList.remove('inactive');
+        closeResiZe();
+        closeMenu();
+    }else if (!enter.classList.contains('inactive')) {
+        enter.classList.add('inactive');
+        closeResiZe();
+}
+}
+
+function openRegistro() {
+    if (registroGeneralPrincipal.classList.contains('inactive')) {
+        registroGeneralPrincipal.classList.remove('inactive');
+        closeResiZe();
+        closeMenu();
+    }else if (!registroGeneralPrincipal.classList.contains('inactive')) {
+        registroGeneralPrincipal.classList.add('inactive');
+        closeResiZe();
+    }
+}
 
 function closeResiZe() {
     if (window.innerWidth >= 650) {
@@ -87,5 +128,18 @@ function openAndCloseDem() {
         arrowUp2.classList.add('inactive')
         arrowDow2.classList.remove('inactive')
         companyList.classList.add("inactive")
+    }
+}
+
+function verifyHash() {
+    if (mantenimiento.classList.contains('inactive')) {
+        mantenimiento.classList.remove('inactive')
+        pantalla.classList.add('inactive')
+        pantalla2.classList.add('inactive')
+        openRegistro();
+    } else if (mantenimiento.classList.contains('inactive')) {
+        mantenimiento.classList.add('inactive')
+        pantalla.classList.remove('inactive')
+        pantalla2.classList.remove('inactive')
     }
 }
