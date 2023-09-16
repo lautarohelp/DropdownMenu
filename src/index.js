@@ -18,8 +18,7 @@ const clickClose = document.querySelector('.clickClose');
 const clickRegistro = document.querySelector('.registro');
 const registroGeneralPrincipal = document.querySelector('.registroGeneralPrincipal');
 const button__login = document.querySelector('.button__login')
-const pantalla = document.querySelector('.pantalla')
-const pantalla2 = document.querySelector('.pantalla2')
+const pantalla = document.querySelectorAll('.pantalla')
 const mantenimiento = document.querySelector('.mantenimiento')
 const enter = document.querySelector('.enter');
 const maik = document.querySelector('.maik');
@@ -31,8 +30,8 @@ closeResiZe();
 
 /* window.addEventListener('hash',verifyHash)   */
 
-closeLogin.addEventListener('click',openLoging)
-loging.addEventListener('click',openLoging)
+closeLogin.addEventListener('click',openLoging);
+loging.addEventListener('click',openLoging);
 maik.addEventListener('click',verifyHash);
 button__login.addEventListener('click',verifyHash);
 clickRegistro.addEventListener('click', openRegistro)
@@ -49,6 +48,7 @@ function openLoging() {
         enter.classList.remove('inactive');
         closeResiZe();
         closeMenu();
+        
     }else if (!enter.classList.contains('inactive')) {
         enter.classList.add('inactive');
         closeResiZe();
@@ -60,6 +60,7 @@ function openRegistro() {
         registroGeneralPrincipal.classList.remove('inactive');
         closeResiZe();
         closeMenu();
+
     }else if (!registroGeneralPrincipal.classList.contains('inactive')) {
         registroGeneralPrincipal.classList.add('inactive');
         closeResiZe();
@@ -134,12 +135,11 @@ function openAndCloseDem() {
 function verifyHash() {
     if (mantenimiento.classList.contains('inactive')) {
         mantenimiento.classList.remove('inactive')
-        pantalla.classList.add('inactive')
-        pantalla2.classList.add('inactive')
-        openRegistro();
+        pantalla.forEach(item => item.classList.add('inactive'));
+        enter.classList.add('inactive');
+        registroGeneralPrincipal.classList.add('inactive');
     } else if (mantenimiento.classList.contains('inactive')) {
         mantenimiento.classList.add('inactive')
-        pantalla.classList.remove('inactive')
-        pantalla2.classList.remove('inactive')
+        pantalla.forEach(item => item.classList.remove('inactive'));
     }
 }
